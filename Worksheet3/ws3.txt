@@ -1,0 +1,18 @@
+TASK ONE:
+    OUTPUT: 
+         DaFuq!?Boom! , United States , 9200000
+         T-Series , India , 9000000
+         Woody & Kleiny , United Kingdom , 2000000
+    ANSWER: The highest earning youTuber from India was T-Series with 9,000,000 highest monthly revenue.
+            The highest earning youTuber from the US was DaFuQ!?Boom! with 9,200,000 highest monthly revenue.
+            The highest earning youTuber from the UK was Woody & Kleiny with 2,000,000 highest monthly revenue.
+
+TASK TWO:
+    OUTPUT:         
+         MrBeast , 166000000 , Entertainment
+         Cocomelon - Nursery Rhymes , 162000000 , Education
+         WWE , 96000000 , Sports
+    ANSWER: The youTuber WWE had the most subscribers in the Sports category with 96,000,000.
+            The youTuber Cocomelon - Nursery Rhymes had the most subscribers in the Education category with 162,000,000.
+            The youTuber MrBeast had the most subscribers in the Entertainment category with 166,000,000.
+

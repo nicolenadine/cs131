@@ -1,0 +1,13 @@
+    123  cd Desktop/Worksheet3
+    131  vim stats2.csv
+T1  132  cut -d',' -f2,8,16 stats2.csv > cutStats.csv
+T1  134  awk -F, '($2 == "United States" || $2 == "United Kingdom" || $2 == "India")' cutStats.csv >> byCountry.csv
+T1  141  sort -t, -nr -k3 byCountry.csv > sorted.csv
+T1  146  awk -F, '!seen[$2]++' sorted.csv > ws3.txt
+    147  vim ws3.txt
+T2  149  awk -F, '($5 == "Sports" || $5 == "Education" || $5 == "Entertainment")' stats2.csv > byCategory.csv
+T2  163  cut -d',' -f2,3,5 byCategory.csv > cutStats.csv
+T2  170  sort -t,  -nr -k2 cutStats.csv > sorted.csv
+T2  173  awk -F, '!seen[$3]++' sorted.csv >> ws3.txt
+    174  vim ws3.txt
+    175  history > cmds.log
