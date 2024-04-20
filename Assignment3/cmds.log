@@ -1,0 +1,34 @@
+  542  cd cs131
+  543  mkdir Assignment3
+  544  cd Assignment3
+  545  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+  546  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+  547  touch Assignment3.txt
+
+  TASK ONE
+  548  sed -n '/sp24/p' last.fake > lastsp24.fake    
+  549  wc -l last.fake >> Assignment3.txt            
+  550  wc -l lastsp24.fake >> Assignment3.txt        
+  
+  TASK TWO
+  551  grep "Sun" lastsp24.fake | awk -F' ' '{print $1}' | sort | uniq > sunday.txt
+  552  awk 'BEGIN{print "The list of people who worked on Sunday are:"} {print $1} END{print "Kudos to these people for putting in the work"}' sunday.txt >> Assignment3.txt
+  
+  TASK THREE
+  553  awk -F' ' '$7 >= 23 || $7 <= 4 {print $1}' lastsp24.fake | sort | uniq > night.txt
+  554  awk 'BEGIN{print "Night Owls List:"} {print $1} END{print "Night Owls are dope. Please ensure you get enough sleep though"}' night.txt >> Assignment3.txt
+  
+  TASK FOUR
+  555  awk -F' ' '$7 >= "05" && $7 <= "09" {print $1}' lastsp24.fake | sort | uniq > day.txt
+  556   awk ' BEGIN{print "Early Birds List:"} {print $1} END{print "Early Birds are dope. Please ensure you get enough sleep though"}' day.txt >> Assignment3.txt
+  
+  TASK FIVE
+  557  awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort -u >> Assignment3.txt
+  
+  TASK SIX
+  558  awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake >> Assignment3.txt
+  
+  TASK SEVEN
+  559  sed 's/[a-zA-Z0-9 ]*//g' passwd.fake | sort -u >> Assignment3.txt
+  
+  560  vim Assignment3.txt
