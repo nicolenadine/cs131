@@ -1,0 +1,31 @@
+Set up directory 
+  618  mkdir Worksheet5
+  619  cd Worksheet5
+
+Create bash script & modify permission
+  620  vim script.sh
+  621  chmod +x script.sh
+ 
+Move youTube stats file into worksheet5 directory
+  622  cd ../Worksheet4
+  624  mv youTubeStats.csv ../Worksheet5
+  625  cd ../Worksheet5
+ 
+Execute script and check for expected output files
+  653  ./script.sh youTubeStats.csv
+  654  ls
+  655  cd 'United States'
+  656  ls
+  657  vim Comedy.txt
+  658  cd ..
+
+Use wc - l to count entries in the requested files and output to ws5.txt file
+  659  wc -l 'United States'/Music.txt >> ws5.txt
+  661  wc -l 'United States'/Entertainment.txt >> ws5.txt
+  662  wc -l 'United States'/Gaming.txt >> ws5.txt
+  663  wc -l 'United States'/Comedy.txt >> ws5.txt
+
+Annotate files
+  664  vim ws5.txt
+  665  history > cmds.log
+  
