@@ -18,6 +18,9 @@ do
    echo "$row" >> "United States/${category}.txt"
 done
 
+# used https://www.baeldung.com/linux/csv-parsing 
+# to learn how to create an array of the rows
+
 
 
 
