@@ -1,5 +1,5 @@
 # Spotify Data Analysis Term Project 
-CS 131: Processing Big-Data at San Jose State University Fall 2024
+CS 131: Processing Big-Data at San Jose State University Fall 2023
 
 ## Project Objective
 
